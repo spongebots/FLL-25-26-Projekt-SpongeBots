@@ -12,4 +12,4 @@ Drucken Sie zwei [Rahmen](Rahmen) und kleben Sie diese, sowie die zwei Tolinos m
 
 “Bild”
 
-Installiere Sie zuletzt noch unsere [App](App) auf den Tolinos. Schalten Sie hierfür die Android-Oberfläche auf ihren Tolinos gemäß <https://allesebook.de/anleitung/tolino-ereader-apps-ohne-root-installieren-anleitung-982971/> frei.
+Installiere Sie zuletzt noch unsere [App](e-ink-sign.apk) auf den Tolinos. Schalten Sie hierfür die Android-Oberfläche auf ihren Tolinos gemäß <https://allesebook.de/anleitung/tolino-ereader-apps-ohne-root-installieren-anleitung-982971/> frei.
