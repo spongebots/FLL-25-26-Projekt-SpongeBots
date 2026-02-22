@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "de.kai_morich.e_ink_sign"
+    namespace = "de.spongebots.e_ink_sign"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "de.kai_morich.e_ink_sign"
+        applicationId = "de.spongebots.e_ink_sign"
         minSdk = 19
         targetSdk = 34
         versionCode = 1

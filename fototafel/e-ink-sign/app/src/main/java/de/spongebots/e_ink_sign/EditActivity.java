@@ -1,4 +1,4 @@
-package de.kai_morich.e_ink_sign;
+package de.spongebots.e_ink_sign;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
