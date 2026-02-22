@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">E-Ink Schild</string>
+    <string name="show">Anzeigen</string>
+    <string name="narrow_font_prefix">Schmale Schrift für Zeilen länger als</string>
+    <string name="narrow_font_suffix">Zeichen</string>
+    <string name="dark">Dunkel</string>
+    <string name="light">Hell</string>
+    <string name="text_hint">Text hier eingeben</string>
+    <string name="landscape">Querformat</string>
+    <string name="portrait">Hochformat</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">E-Ink Sign</string>
+    <string name="show">Show</string>
+    <string name="narrow_font_prefix">Narrow font for lines longer than</string>
+    <string name="narrow_font_suffix">characters</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="text_hint">Enter text here</string>
+    <string name="landscape">Landscape</string>
+    <string name="portrait">Portrait</string>
+</resources>
