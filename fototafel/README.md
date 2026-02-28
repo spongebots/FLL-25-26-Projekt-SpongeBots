@@ -8,7 +8,7 @@ Material:
 
 Anleitung:
 
-Drucken Sie zwei [Rahmen](Rahmen) und kleben Sie diese, sowie die zwei Tolinos mit doppelseitigem Klebeband in ihrer Tablethülle fest. Kleben sie nun die beiden Magnete mit einseitigem Klebeband an den Tablethüllendeckel so fest, dass die Tolinos beim Zuklappen der Tablethülle ausgeschaltet werden.
+Drucken Sie zwei [Rahmen](Rahmen.stl) und kleben Sie diese, sowie die zwei Tolinos mit doppelseitigem Klebeband in ihrer Tablethülle fest. Kleben sie nun die beiden Magnete mit einseitigem Klebeband an den Tablethüllendeckel so fest, dass die Tolinos beim Zuklappen der Tablethülle ausgeschaltet werden.
 
 ![](Fototafel.jpg)
 
