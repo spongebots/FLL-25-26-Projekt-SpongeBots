@@ -20,6 +20,11 @@
         <activity
             android:name=".ShowActivity"
             android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".EditActivity"
+            android:exported="false" />
 
     </application>
 

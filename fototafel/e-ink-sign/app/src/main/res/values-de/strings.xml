@@ -8,4 +8,7 @@
     <string name="text_hint">Text hier eingeben</string>
     <string name="landscape">Querformat</string>
     <string name="portrait">Hochformat</string>
+    <string name="settings">Einstellungen</string>
+    <string name="orientation">Ausrichtung</string>
+    <string name="theme">Design</string>
 </resources>

@@ -1,5 +1,6 @@
 package de.spongebots.e_ink_sign;
 
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Paint;
 import android.graphics.Typeface;
@@ -19,8 +20,10 @@ public class ShowActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String theme = getIntent().getStringExtra("theme");
-        if ("dark".equals(theme)) {
+        SharedPreferences prefs = getSharedPreferences(AppPreferences.PREFS_NAME, MODE_PRIVATE);
+
+        int selectedThemeId = prefs.getInt(AppPreferences.THEME_KEY, R.id.lightThemeRadioButton);
+        if (selectedThemeId == R.id.darkThemeRadioButton) {
             setTheme(R.style.Theme_EinkSign_Dark);
         } else {
             setTheme(R.style.Theme_EinkSign_Light);
@@ -39,10 +42,10 @@ public class ShowActivity extends AppCompatActivity {
         Typeface narrowTypeface = ResourcesCompat.getFont(this, R.font.ptsans_narrow_bold);
         textView.setTypeface(normalTypeface);
 
-        String text = getIntent().getStringExtra("text");
-        int narrowTextLength = getIntent().getIntExtra("narrow_text_length", 0);
+        String text = prefs.getString(AppPreferences.TEXT_KEY, "");
+        int narrowTextLength = prefs.getInt(AppPreferences.NARROW_LENGTH_KEY, 12);
 
-        if (text != null) {
+        if (!text.isEmpty()) {
             SpannableString spannableString = new SpannableString(text);
             if (narrowTextLength > 0) {
                 int start = 0;
@@ -60,8 +63,8 @@ public class ShowActivity extends AppCompatActivity {
             textView.setText(spannableString);
         }
 
-        String orientation = getIntent().getStringExtra("orientation");
-        if ("landscape".equals(orientation)) {
+        int selectedOrientationId = prefs.getInt(AppPreferences.ORIENTATION_KEY, R.id.portraitRadioButton);
+        if (selectedOrientationId == R.id.landscapeRadioButton) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         } else {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -77,8 +80,6 @@ public class ShowActivity extends AppCompatActivity {
     }
 
     private void hideNavigationBar() {
-        // We only need to set the flags for hiding the navigation bar now.
-        // The fullscreen status is handled by the theme.
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
